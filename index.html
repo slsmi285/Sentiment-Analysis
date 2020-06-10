@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Group 4 Project 1</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <!-- Bootstrap version 4.5 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="style.css"/>
+
+</head>
+
+<body>
+
+    <!-- main container for all content -->
+    <div class="container-fluid">
+
+        <h1>News Affect</h1>
+
+        <h3>. . . The news feed for your soul</h3>
+
+        <p id="today"></p>
+
+        <div class="row" id="border"></div>
+   
+        <nav class="navbar navbar-expand-xl navbar-outline-none">
+            
+            <!-- NAVBAR BUTTONS-->
+
+            <!-- <div class="categories" role="group">
+                <button type="submit" class="btn btn-outline-none run-search" value="home">Home</button>
+                <button type="submit" class="btn btn-outline-none run-search" value="arts">Arts</button>
+                <button type="submit" class="btn btn-outline-none run-search" value="science">Science</button>
+                <button type="submit" class="btn btn-outline-none run-search" value="movies">Movies</button>
+                <button type="submit" class="btn btn-outline-none run-search" value="politics">Politics</button>
+                <button type="submit" class="btn btn-outline-none run-search" value="sports">Sports</button>
+                <button type="submit" class="btn btn-outline-none run-search" value="travel">Travel</button>
+                <button type="submit" class="btn btn-outline-none run-search" value="books">Books</button>
+                <button type="submit" class="btn btn-outline-none run-search" value="technology">Technology</button>
+            </div> -->
+
+            <!-- CATEGORY DROPDOWN -->
+
+            <div class="form-group" id="cat">
+                <label for="pwd">Category</label>
+                <select id="article-category" class="custom-select" aria-labelledby="dropdownMenuButton">
+                <option value="home" selected>Home</option>
+                <option value="arts">Arts</option>
+                <option value="books">Books</option>
+                <option value="movies">Movies</option>
+                <option value="politics">Politics</option>
+                <option value="science">Science</option>
+                <option value="sports">Sports</option>
+                <option value="technology">Technology</option>
+                <option value="travel">Travel</option>
+                </select>
+            </div>
+
+            <!-- KATIE MAX ARTICLES DROPDOWN -->
+
+            <!-- <div class="dropdown">
+                <button class="btn btn-outline-none">Max # of Articles
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="#">5</a>
+                  <a href="#">10</a>
+                  <a href="#">20</a>
+                </div>
+            </div> -->
+
+            <!-- MAX ARTICLES DROPDOWN -->
+
+            <div class="form-group" id="max">
+                <label for="pwd">Max Number of Articles:</label>
+                <select id="article-max" class="custom-select" aria-labelledby="dropdownMenuButton">
+                    <option value="" selected>No Maximum</option>
+                    <option value="5">5</option>
+                    <option value="10">10</option>
+                    <option value="20">20</option>
+                </select>
+            </div>
+
+            <!-- KATIE SEARCH BUTTON -->
+            <!-- <form class="form-inline">
+                <input class="form-control mr-sm-2" id="search-term" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-dark my-2 my-sm-0 submit" type="submit">Search</button>
+            </form> -->
+
+            <div class="form-group" id="searchform">
+                <label for="search">Search Term (Optional):</label>
+                <input type="text" class="form-control" id="search-term" placeholder="e.g. Trump">
+            </div>
+
+            <button type="submit" class="btn btn-default" id="run-search">
+                <i class="fa fa-search"></i> Search</button>
+                <button class="btn btn-dark" id="clear-all">
+                <i class="fa fa-trash"></i> Clear Results</button>
+
+
+
+        </nav>
+
+        <div class="row" id="border"></div>
+
+        <!-- original articles (hidden) -->
+        <div id="article-section"></div>
+
+        <div class="row">
+
+            <table class="table table-bordered col-md-8">
+
+                <thead class="thead" id="table1">
+                    <tr>
+                        <th><i class="fas fa-plus"></i> Positive</th>
+                        <th>Neutral</th>
+                        <th>Negative <i class="fas fa-minus"></i></th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+
+                        <td>
+                            <ul class="list-group" id="positive-articles"></ul>
+                        </td>
+
+                        <td>
+                            <ul class="list-group" id="neutral-articles"></ul>
+                        </td>
+
+                        <td>
+                            <ul class="list-group" id="negative-articles"></ul>
+                        </td>
+
+                    </tr>
+                </tbody>
+
+            </table>
+            
+            <table class="table table-bordered col-md-3">
+
+                <thead class="thead">
+
+                    <th id="favs">Favorites <i class="fas fa-thumbtack"></i></th>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>
+                            <ul class="fav-group" id="favorite-articles"></ul>
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div> <!-- End of row -->
+        
+    </div>  <!-- end of main container -->   
+
+    <div class="footer">
+
+        <a id="about" href="about.html">About</a>
+
+        <p id="copy">Copyright &copy</p>
+
+        <p id="logo">
+            <a href="https://developer.nytimes.com/">
+             <img alt="NYTlogo" src="https://developer.nytimes.com/files/poweredby_nytimes_150c.png?v=1568441068237">
+             </a>
+         </p>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="javascript.js"></script>
+
+</body>
+
+</html>

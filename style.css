@@ -1,0 +1,164 @@
+@font-face {
+    font-family: OldEnglish;
+    src: url(../group-project-1/Images/Old_Englished_Boots.ttf)
+}
+
+@font-face {
+    font-family: CandL;
+    src: url(../group-project-1/Images/Champagne\ &\ Limousines\ Italic.ttf)
+}
+
+@font-face {
+    font-family: CandLbold;
+    src: url(../group-project-1/Images/Champagne\ &\ Limousines\ Bold.ttf)
+}
+
+@font-face {
+    font-family: LiveNews;
+    src: url(../group-project-1/Images/LiveNews.ttf)
+}
+
+.container-fluid {
+    margin-bottom: 110px;
+}
+
+h1 {
+    margin-top: 50px;
+    text-align: center;
+    font-family: OldEnglish;
+    font-size: 125px;
+}
+
+#date {
+    font-size: smaller;
+}
+
+#border {
+    border: .5px solid black;
+    margin-bottom: 100px;
+}
+
+nav.navbar {
+    background-color: white;
+    justify-content: center;
+}
+
+.form-group {
+    margin-right: 50px;
+}
+
+.btn {
+    background-color: black;
+    color: white;
+    font-size: 25px;
+    margin-right: 50px;
+}
+
+.btn:hover {
+    background-color: red;
+}
+
+/*
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+    .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+}
+*/
+
+input {
+    margin-left: 10px;
+}
+
+h3 {
+    font-family: CandL;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.table {
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+
+.fas {
+    font-size: 0.4em;
+}
+
+thead {
+    font-family: CandLbold;
+    border: solid black;
+    font-size: 45px;
+}
+
+th {
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+#favs {
+    background-color: white;
+    color: black;
+}
+
+h2 {
+    margin-top: 50px;
+    font-family: LiveNews;
+    font-size: 50px;
+}
+
+#article-section {
+    display: none;
+}
+
+#card {
+    margin: 0 20px 50px 20px;
+    padding: 0;
+}
+
+.card-header {
+    background-color:black;
+    color: white;
+    font-family: CandLbold;
+    font-size: 45px;
+}
+
+#favtable {
+    margin: 0 20px 0 20px;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+#about {
+      justify-content: left;
+  }

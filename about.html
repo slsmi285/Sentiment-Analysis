@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Group Project</title>
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- Bootstrap version 4.5 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+
+    <!-- main container for all content -->
+    <div class="container-fluid d-flex flex-column grow">
+
+        <h1>The News Affect</h1>
+
+        <h3>. . . The news feed for your soul</h3>
+
+        <p id="today"></p>
+
+        <div class="row" id="border"></div>
+
+        <div class="row">
+
+            <div class="card col-md-7" id="card">
+
+                <div class="card-header">
+                    About This App
+                </div>
+
+                <div class="card-body">
+                   <p>News got you down? Look no further than the News Affect app! With all the negativity in the news in 2020, the world needs an app to help you sift through headlines that will suit your sentimental needs.</p> 
+                    <p>Our app pulls top articles from the New York Times and sends them to Microsoft Text Analytics where each article is scored based on its likeliness to convey a positive, neutral, or negative sentiment. Article headlines are then sorted into three corresponding columns according their score for the user’s viewing pleasure!</p> 
+                    <p>The user has the option of searching the news by category, narrowing the search within any category by using a search term, and limiting the number of articles if they desire. Additionally, the user can click the star icon located next to each headline to save the article to their favorites list (which gets stored in their browser’s local storage), and then remove it from the list by clicking the star icon once again.</p>
+                    <p>We hope you enjoy the News Affect and we hope it enhances your news experience!</p>
+                    <p>Katherine, Katie, Sandy, and James</p>
+                </div>
+
+            </div>  
+        
+
+            <table class="table table-bordered col-md-4" id="favtable">
+
+                <thead class="thead">
+
+                    <th id="favs">Favorites <i class="fas fa-thumbtack"></i></th>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>
+                            <ul class="fav-group" id="favorite-articles"></ul>
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div> <!-- end of main container -->
+
+    <div class="footer">
+
+        <a href="index.html">Main</a>
+
+        <p>Copyright &copy</p>
+
+        <p>
+           <a href="https://developer.nytimes.com/">
+            <img alt="NYTlogo" src="https://developer.nytimes.com/files/poweredby_nytimes_150c.png?v=1568441068237">
+            </a>
+        </p>
+     
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="javascript.js"></script>
+
+</body>
+</html>
